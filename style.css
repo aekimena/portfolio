@@ -8,6 +8,15 @@
     padding-right: 1rem;
 }
 
-.a-link {
-    padding-right: 10rem;
+.contact-box {
+    background-color: #fff;
+    box-shadow: 0px 0px 12px rgb(84, 84, 84);
+    width: 90%;
+    height: auto;
+    padding: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
