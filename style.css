@@ -1,5 +1,5 @@
 .line-1 {
-    width: 180px;
+    width: 100px;
     height: 8px;
 }
 
@@ -19,4 +19,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+}
+
+.project-box {
+    padding: 1rem;
+    box-shadow: 0rem 0rem 5px  rgb(182, 181, 181);
+}
+
+.line-2 {
+    width: auto;
+    height: 1px;
+}
+
+.a-link {
+    padding-right: 0.3rem;
 }
