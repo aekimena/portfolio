@@ -34,3 +34,72 @@
 .a-link {
     padding-right: 0.3rem;
 }
+
+.change-background-dark {
+    background-color: #121212;
+}
+
+.change-line-dark {
+    background-color: #e0e0e0;
+}
+
+.change-line-light {
+    background-color: #000;
+}
+
+.change-background-box-shadow-dark{
+    box-shadow: 0 0 4px 4px rgba(0,0,0,0.3);
+}
+
+.change-text-dark {
+    color: #e0e0e0;
+}
+
+.change-button-dark {
+    background: none;
+    color: #e0e0e0;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    border-radius: .5rem;
+    padding: .4rem 1rem;
+}
+.change-button-dark:hover {
+    background: #e0e0e0;
+    color: #121212;
+}
+
+.change-button-light {
+    background: none;
+    color: #121212;
+    outline: none;
+    border: 1px solid #121212;
+    border-radius: .5rem;
+    padding: .4rem 1rem;
+}
+
+.change-button-light:hover {
+    background: #000;
+    color: #fff;
+}
+
+.theme-changer {
+    position: fixed;
+    font-size: 2rem;
+    bottom: 2rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    background: #000;
+    border-radius: 7px;
+    padding: .2rem .6rem;
+    z-index: 9;
+}
+
+.theme-changer-dark {
+    background: #e0e0e0;
+    color: #121212;
+}
+
+.theme-changer i {
+    font-size: 2rem;
+}
