@@ -34,13 +34,14 @@
     padding: 0.5rem 1rem 0 1rem;
 }
 
-.fa-envelope, .fa-times {
+.fa-envelope,
+.fa-times {
     color: #000;
 }
 
 .project-box {
     padding: 1rem;
-    box-shadow: 0rem 0rem 5px  rgb(182, 181, 181);
+    box-shadow: 0rem 0rem 5px rgb(182, 181, 181);
 }
 
 .a-link {
@@ -59,8 +60,8 @@
     background-color: #000;
 }
 
-.change-background-box-shadow-dark{
-    box-shadow: 0 0 5px 3px rgba(225,225,225,0.1);
+.change-background-box-shadow-dark {
+    box-shadow: 0 0 5px 3px rgba(225, 225, 225, 0.1);
 }
 
 .change-text-dark {
@@ -75,6 +76,7 @@
     border-radius: .5rem;
     padding: .4rem 1rem;
 }
+
 .change-button-dark:hover {
     background: #fff;
     color: #000;
@@ -103,8 +105,8 @@
     color: #fff;
     background: #000;
     border-radius: 7px;
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
     z-index: 9;
 }
 
@@ -114,5 +116,5 @@
 }
 
 .theme-changer i {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
