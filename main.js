@@ -21,6 +21,8 @@ function showTrueResult(){
         item.classList.add('change-background-dark', 'change-background-box-shadow-dark')
     })
     document.querySelector('.theme-changer').classList.add('theme-changer-dark');
+    document.querySelector('.moon').style.display = 'none';
+    document.querySelector('.sun').style.display = 'block';
 }
 
 function showFalseResult(){
@@ -40,6 +42,8 @@ function showFalseResult(){
             item.classList.remove('change-background-dark', 'change-background-box-shadow-dark')
         })
         document.querySelector('.theme-changer').classList.remove('theme-changer-dark');
+        document.querySelector('.moon').style.display = 'block';
+        document.querySelector('.sun').style.display = 'none';
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -76,10 +80,13 @@ changeTheme();
 document.getElementById('contact-btn').onclick = () => {
     document.getElementById('contact-box').style = "display: block;";
 
+    document.addEventListener('click', (event) => {
+        if(event.target.id !== 'contact-box' && event.target.id !== 'contact-btn'){
+            document.getElementById('contact-box').style = "display: none;";
+        }
+    })
+
     document.getElementById('cancel-btn').onclick = () => {
         document.getElementById('contact-box').style = "display: none;";
     }
 }
-
-
-
