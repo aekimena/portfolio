@@ -3,9 +3,13 @@
     height: 8px;
 }
 
+.hide {
+    display: none;
+}
+
 .icon {
-    font-size: 1.5rem;
-    padding-right: 1rem;
+    font-size: 1.8rem;
+    color: #000;
 }
 
 .contact-box {
@@ -21,14 +25,22 @@
     display: none;
 }
 
+#cancel-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem 0 1rem;
+}
+
+.fa-envelope, .fa-times {
+    color: #000;
+}
+
 .project-box {
     padding: 1rem;
     box-shadow: 0rem 0rem 5px  rgb(182, 181, 181);
-}
-
-.line-2 {
-    width: auto;
-    height: 1px;
 }
 
 .a-link {
@@ -36,11 +48,11 @@
 }
 
 .change-background-dark {
-    background-color: #121212;
+    background-color: #000;
 }
 
 .change-line-dark {
-    background-color: #e0e0e0;
+    background-color: #fff;
 }
 
 .change-line-light {
@@ -48,31 +60,31 @@
 }
 
 .change-background-box-shadow-dark{
-    box-shadow: 0 0 4px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px 3px rgba(225,225,225,0.1);
 }
 
 .change-text-dark {
-    color: #e0e0e0;
+    color: #fff;
 }
 
 .change-button-dark {
     background: none;
-    color: #e0e0e0;
+    color: #fff;
     outline: none;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #fff;
     border-radius: .5rem;
     padding: .4rem 1rem;
 }
 .change-button-dark:hover {
-    background: #e0e0e0;
-    color: #121212;
+    background: #fff;
+    color: #000;
 }
 
 .change-button-light {
     background: none;
-    color: #121212;
+    color: #000;
     outline: none;
-    border: 1px solid #121212;
+    border: 1px solid #000;
     border-radius: .5rem;
     padding: .4rem 1rem;
 }
@@ -91,13 +103,14 @@
     color: #fff;
     background: #000;
     border-radius: 7px;
-    padding: .2rem .6rem;
+    height: 60px;
+    width: 60px;
     z-index: 9;
 }
 
 .theme-changer-dark {
-    background: #e0e0e0;
-    color: #121212;
+    background: #fff;
+    color: #000;
 }
 
 .theme-changer i {
