@@ -51,6 +51,8 @@ window.addEventListener('DOMContentLoaded', () => {
         showTrueResult();
     }else if(isDarkMode == false){
         showFalseResult();
+    }else if(isDarkMode == null){
+        showTrueResult();
     }
 })
 
