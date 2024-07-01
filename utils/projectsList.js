@@ -1,0 +1,68 @@
+export const projectsList = [
+  {
+    id: 1,
+    title: "Real Time Chat App",
+    body: "I built a real time chat app using realm database, firebase, mongoDB,",
+    gallery: [
+      require("../assets/project-images/chat-1.png"),
+      require("../assets/project-images/chat-2.png"),
+      require("../assets/project-images/chat-3.png"),
+    ],
+    link: "https://github.com/aekimena/Chat-app",
+  },
+  {
+    id: 2,
+    title: "News App",
+    body: "I built a news app with the newsAPI, inspired by a mobile design on dribble.",
+    gallery: [
+      require("../assets/project-images/news-1.png"),
+      require("../assets/project-images/news-2.png"),
+      require("../assets/project-images/news-3.png"),
+      require("../assets/project-images/news-4.png"),
+      require("../assets/project-images/news-5.png"),
+    ],
+    link: "https://github.com/aekimena/News-app-ui",
+  },
+  {
+    id: 3,
+    title: "Social media App",
+    body: "I built a social media app using firebase, mongoDB, graphQL, inspired by X (twitter)",
+    gallery: [
+      require("../assets/project-images/social-media-1.png"),
+      require("../assets/project-images/social-media-2.png"),
+      require("../assets/project-images/social-media-3.png"),
+      require("../assets/project-images/social-media-5.png"),
+    ],
+    link: "https://github.com/aekimena/social-media-app",
+  },
+  {
+    id: 4,
+    title: "Ecommerce App",
+    body: "I built an ecommerce app with mongoDB, node.js/expressJs, paystack payment gateway, push notification by Notifee.\nI built both the customer side and admin side.",
+    gallery: [
+      require("../assets/project-images/shop-1.png"),
+      require("../assets/project-images/shop-2.png"),
+      require("../assets/project-images/shop-3.png"),
+      require("../assets/project-images/shop-4.png"),
+      require("../assets/project-images/shop-5.png"),
+      require("../assets/project-images/shop-6.png"),
+    ],
+    link: "https://github.com/aekimena/E-commerce-app",
+  },
+  {
+    id: 5,
+    title: "Reminder App",
+    body: "I built a Notes / Reminder App, inspired by the inbuilt notes app on the infinix mobile.",
+    gallery: [
+      require("../assets/project-images/notes-1.png"),
+      require("../assets/project-images/notes-2.png"),
+      require("../assets/project-images/notes-3.png"),
+      require("../assets/project-images/notes-4.png"),
+      require("../assets/project-images/notes-5.png"),
+      require("../assets/project-images/notes-6.png"),
+      require("../assets/project-images/notes-7.png"),
+      require("../assets/project-images/notes-8.png"),
+    ],
+    link: "https://github.com/aekimena/Reminder-app",
+  },
+];
