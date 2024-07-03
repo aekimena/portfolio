@@ -44,8 +44,6 @@ export const projectsList = [
       require("../assets/project-images/shop-2.png"),
       require("../assets/project-images/shop-3.png"),
       require("../assets/project-images/shop-4.png"),
-      require("../assets/project-images/shop-5.png"),
-      require("../assets/project-images/shop-6.png"),
     ],
     link: "https://github.com/aekimena/E-commerce-app",
   },
