@@ -7,24 +7,21 @@ const projects = [
     title: "Voice call app",
     description:
       "A real-time voice and video calling app using ZegoCloud SDK and React Native.",
-    video:
-      "https://res.cloudinary.com/degwfekqr/video/upload/v1749225166/call-app-vid-preview_vlipa4.mp4",
+    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749225166/call-app-vid-preview_vlipa4.mp4`,
     codeLink: "https://github.com/aekimena/react-native-call-app",
     apkLink: "/apks/callapp.apk",
   },
   {
     title: "Face liveness verification",
     description: "Instant face verification with kairos api and React Native",
-    video:
-      "https://res.cloudinary.com/degwfekqr/video/upload/v1749225283/face-verify-vid-preview_xt8lrl.mp4",
+    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749225283/face-verify-vid-preview_xt8lrl.mp4`,
     codeLink: "https://github.com/aekimena/face-verification",
     apkLink: "/apks/callapp.apk",
   },
   {
     title: "Rn chat app",
     description: "Chat app built with socket.io,",
-    video:
-      "https://res.cloudinary.com/degwfekqr/video/upload/v1749226433/chat-app-vid-preview_ykcv6s.mp4",
+    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749226433/chat-app-vid-preview_ykcv6s.mp4`,
     codeLink: "https://github.com/aekimena/rn-chat-app",
     apkLink: "/apks/callapp.apk",
   },
@@ -32,8 +29,7 @@ const projects = [
   {
     title: "Rn shop app",
     description: "Marketplace app with flutterwave payment gateway",
-    video:
-      "https://res.cloudinary.com/degwfekqr/video/upload/v1749227249/shop-app-vid-prev_zvi4h2.mp4",
+    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749227249/shop-app-vid-prev_zvi4h2.mp4`,
     codeLink: "https://github.com/aekimena/rn-shop-app",
     apkLink: "/apks/callapp.apk",
   },
@@ -41,8 +37,7 @@ const projects = [
     title: "Rn location tracker app",
     description:
       "Search any location and direction. Built with google maps sdk",
-    video:
-      "https://res.cloudinary.com/degwfekqr/video/upload/v1749221814/location-vid-preview_bkjx7x.mp4",
+    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749221814/location-vid-preview_bkjx7x.mp4`,
     codeLink: "https://github.com/aekimena/rn-location-tracker",
     apkLink: "/apks/callapp.apk",
   },
@@ -50,8 +45,7 @@ const projects = [
     title: "aekimena-month-year-picker",
     description:
       "I built a sleek and customizable month year picker for react native applications currently hosted on npm.",
-    video:
-      "https://res.cloudinary.com/degwfekqr/video/upload/v1749224704/date-picker-vid-preview_giueea.mp4",
+    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749224704/date-picker-vid-preview_giueea.mp4`,
     codeLink: "https://www.npmjs.com/package/aekimena-month-year-picker",
     apkLink: "/apks/callapp.apk",
   },
@@ -59,8 +53,7 @@ const projects = [
     title: "Rn auction app",
     description:
       "Post your art, bid. Built with React Native, mongoDB, express, socket.io",
-    video:
-      "https://res.cloudinary.com/degwfekqr/video/upload/v1749231357/auction-app-vid-prev_uznqaj.mp4",
+    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749231357/auction-app-vid-prev_uznqaj.mp4`,
     codeLink: "https://github.com/aekimena/rn-auction-app",
     apkLink: "/apks/callapp.apk",
   },
@@ -69,8 +62,7 @@ const projects = [
     title: "Rn social app",
     description:
       "Share photos & more on this app. Built with React Native, mongoDB, express, socket.io,",
-    video:
-      "https://res.cloudinary.com/degwfekqr/video/upload/v1749229890/social-app-vid-prev_ik2wcn.mp4",
+    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749229890/social-app-vid-prev_ik2wcn.mp4`,
     codeLink: "https://github.com/aekimena/rn-social-app",
     apkLink: "/apks/callapp.apk",
   },
@@ -123,7 +115,7 @@ export default function Home() {
                   href={project.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white text-black px-4 py-2 rounded "
+                  className="bg-white text-black px-4 py-2 rounded font-medium"
                 >
                   View Code
                 </a>
