@@ -1,103 +1,156 @@
+// app/page.tsx or pages/index.tsx
 import Image from "next/image";
+import React from "react";
+
+const projects = [
+  {
+    title: "Voice call app",
+    description:
+      "A real-time voice and video calling app using ZegoCloud SDK and React Native.",
+    video:
+      "https://res.cloudinary.com/degwfekqr/video/upload/v1749225166/call-app-vid-preview_vlipa4.mp4",
+    codeLink: "https://github.com/aekimena/react-native-call-app",
+    apkLink: "/apks/callapp.apk",
+  },
+  {
+    title: "Face liveness verification",
+    description: "Instant face verification with kairos api and React Native",
+    video:
+      "https://res.cloudinary.com/degwfekqr/video/upload/v1749225283/face-verify-vid-preview_xt8lrl.mp4",
+    codeLink: "https://github.com/aekimena/face-verification",
+    apkLink: "/apks/callapp.apk",
+  },
+  {
+    title: "Rn chat app",
+    description: "Chat app built with socket.io,",
+    video:
+      "https://res.cloudinary.com/degwfekqr/video/upload/v1749226433/chat-app-vid-preview_ykcv6s.mp4",
+    codeLink: "https://github.com/aekimena/rn-chat-app",
+    apkLink: "/apks/callapp.apk",
+  },
+
+  {
+    title: "Rn shop app",
+    description: "Marketplace app with flutterwave payment gateway",
+    video:
+      "https://res.cloudinary.com/degwfekqr/video/upload/v1749227249/shop-app-vid-prev_zvi4h2.mp4",
+    codeLink: "https://github.com/aekimena/rn-shop-app",
+    apkLink: "/apks/callapp.apk",
+  },
+  {
+    title: "Rn location tracker app",
+    description:
+      "Search any location and direction. Built with google maps sdk",
+    video:
+      "https://res.cloudinary.com/degwfekqr/video/upload/v1749221814/location-vid-preview_bkjx7x.mp4",
+    codeLink: "https://github.com/aekimena/rn-location-tracker",
+    apkLink: "/apks/callapp.apk",
+  },
+  {
+    title: "aekimena-month-year-picker",
+    description:
+      "I built a sleek and customizable month year picker for react native applications currently hosted on npm.",
+    video:
+      "https://res.cloudinary.com/degwfekqr/video/upload/v1749224704/date-picker-vid-preview_giueea.mp4",
+    codeLink: "https://www.npmjs.com/package/aekimena-month-year-picker",
+    apkLink: "/apks/callapp.apk",
+  },
+  {
+    title: "Rn auction app",
+    description:
+      "Post your art, bid. Built with React Native, mongoDB, express, socket.io",
+    video:
+      "https://res.cloudinary.com/degwfekqr/video/upload/v1749231357/auction-app-vid-prev_uznqaj.mp4",
+    codeLink: "https://github.com/aekimena/rn-auction-app",
+    apkLink: "/apks/callapp.apk",
+  },
+
+  {
+    title: "Rn social app",
+    description:
+      "Share photos & more on this app. Built with React Native, mongoDB, express, socket.io,",
+    video:
+      "https://res.cloudinary.com/degwfekqr/video/upload/v1749229890/social-app-vid-prev_ik2wcn.mp4",
+    codeLink: "https://github.com/aekimena/rn-social-app",
+    apkLink: "/apks/callapp.apk",
+  },
+];
+
+const links = [
+  { title: "Linkedin", url: "https://linkedin.com/in/aekimena" },
+  { title: "X", url: "https://x.com/aekimena" },
+  { title: "Github", url: "https://github.com/aekimena" },
+];
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <main className="min-h-screen bg-black p-8">
+      <section className="flex flex-col items-center mb-12">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/images/ae-avatar.jpg" // You can use a remote URL here too
+          alt="Profile"
+          width={140}
+          height={140}
+          style={{ borderRadius: 140 / 2, height: 140, width: 140 }}
+          // className="rounded-full shadow-lg object-cover"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+        <h1 className="mt-4 text-3xl font-bold">Arinze Emmanuel</h1>
+        <p className="text-gray-200 text-base mt-2">React Native Developer</p>
+      </section>
+      {/* <h1 className="text-4xl font-bold mb-10 text-center">My App Portfolio</h1> */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow"
+            style={{ backgroundColor: "#121212" }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
+            <div className="p-3">
+              <video
+                src={project.video}
+                className="w-full h-64 object-center"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            </div>
+            <div className="p-6">
+              <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
+              <p className="text-white mb-4">{project.description}</p>
+              <div className="flex gap-4">
+                <a
+                  href={project.codeLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-black px-4 py-2 rounded "
+                >
+                  View Code
+                </a>
+                {/* <a
+                  href={project.apkLink}
+                  download
+                  className=" text-white px-4 py-2 rounded hover:bg-green-700 outline"
+                >
+                  Get APK
+                </a> */}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <footer className="pt-20 flex flex-row gap-5 items-center justify-center">
+        {links.map((item, index) => (
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            key={index}
+            href={item.url}
+            className="text-base font-medium"
+            target="blank"
           >
-            Read our docs
+            {item.title}
           </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        ))}
       </footer>
-    </div>
+    </main>
   );
 }
