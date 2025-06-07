@@ -11,10 +11,10 @@ export default function WhyWorkWithMe() {
         </h2>
 
         <p className="text-lg leading-relaxed mb-6 pt-10">
-          I've worked remotely with cross-functional teams — designers, backend
-          engineers, and project managers — across time zones. I understand how
-          to communicate clearly, meet deadlines, and keep things moving
-          forward.
+          I&apos;ve worked remotely with cross-functional teams — designers,
+          backend engineers, and project managers — across time zones. I
+          understand how to communicate clearly, meet deadlines, and keep things
+          moving forward.
         </p>
         <p className="text-lg leading-relaxed mb-6 ">
           With years of hands-on experience and the strategic use of AI tools, I
@@ -22,9 +22,9 @@ export default function WhyWorkWithMe() {
           solving problems with clarity and speed.
         </p>
         <p className="text-lg leading-relaxed mb-6 ">
-          I learn new tools, libraries, and technologies on the go. Whether it's
-          integrating a new SDK or switching up the stack, I pick things up
-          quickly and deliver results without slowing down the team.
+          I learn new tools, libraries, and technologies on the go. Whether
+          it&apos;s integrating a new SDK or switching up the stack, I pick
+          things up quickly and deliver results without slowing down the team.
         </p>
         <p className="text-lg leading-relaxed mb-6 ">
           In short, I’m reliable, flexible, and focused on building quality apps

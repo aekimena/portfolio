@@ -70,12 +70,6 @@ const projects = [
   // },
 ];
 
-const links = [
-  { title: "Linkedin", url: "https://linkedin.com/in/aekimena" },
-  { title: "X", url: "https://x.com/aekimena" },
-  { title: "Github", url: "https://github.com/aekimena" },
-];
-
 export default function Home() {
   return (
     <main className="min-h-screen bg-black p-8">
