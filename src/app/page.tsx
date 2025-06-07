@@ -1,4 +1,6 @@
 // app/page.tsx or pages/index.tsx
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Image from "next/image";
 import React from "react";
 
@@ -49,23 +51,23 @@ const projects = [
     codeLink: "https://www.npmjs.com/package/aekimena-month-year-picker",
     apkLink: "/apks/callapp.apk",
   },
-  {
-    title: "Rn auction app",
-    description:
-      "Post your art, bid. Built with React Native, mongoDB, express, socket.io",
-    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749231357/auction-app-vid-prev_uznqaj.mp4`,
-    codeLink: "https://github.com/aekimena/rn-auction-app",
-    apkLink: "/apks/callapp.apk",
-  },
+  // {
+  //   title: "Rn auction app",
+  //   description:
+  //     "Post your art, bid. Built with React Native, mongoDB, express, socket.io",
+  //   video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749231357/auction-app-vid-prev_uznqaj.mp4`,
+  //   codeLink: "https://github.com/aekimena/rn-auction-app",
+  //   apkLink: "/apks/callapp.apk",
+  // },
 
-  {
-    title: "Rn social app",
-    description:
-      "Share photos & more on this app. Built with React Native, mongoDB, express, socket.io,",
-    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749229890/social-app-vid-prev_ik2wcn.mp4`,
-    codeLink: "https://github.com/aekimena/rn-social-app",
-    apkLink: "/apks/callapp.apk",
-  },
+  // {
+  //   title: "Rn social app",
+  //   description:
+  //     "Share photos & more on this app. Built with React Native, mongoDB, express, socket.io,",
+  //   video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749229890/social-app-vid-prev_ik2wcn.mp4`,
+  //   codeLink: "https://github.com/aekimena/rn-social-app",
+  //   apkLink: "/apks/callapp.apk",
+  // },
 ];
 
 const links = [
@@ -77,7 +79,8 @@ const links = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-black p-8">
-      <section className="flex flex-col items-center mb-12">
+      <Header />
+      <section className="flex flex-col items-center mb-12 pt-20">
         <Image
           src="/images/ae-avatar.jpg" // You can use a remote URL here too
           alt="Profile"
@@ -115,7 +118,7 @@ export default function Home() {
                   href={project.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white text-black px-4 py-2 rounded font-medium"
+                  className="bg-blue-600 text-white px-4 py-2 rounded font-medium hover:bg-blue-500"
                 >
                   View Code
                 </a>
@@ -131,18 +134,8 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <footer className="pt-20 flex flex-row gap-5 items-center justify-center">
-        {links.map((item, index) => (
-          <a
-            key={index}
-            href={item.url}
-            className="text-base font-medium"
-            target="blank"
-          >
-            {item.title}
-          </a>
-        ))}
-      </footer>
+
+      <Footer />
     </main>
   );
 }
