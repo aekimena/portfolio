@@ -21,6 +21,13 @@ const projects = [
     apkLink: "/apks/callapp.apk",
   },
   {
+    title: "Flight booking app",
+    description: "Flight booking app (Google flights mobile clone)",
+    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1752271241/price_graph_screen_record_yywsfn.mp4`,
+    codeLink: "https://github.com/aekimena/book-flights-app",
+    apkLink: "/apks/callapp.apk",
+  },
+  {
     title: "Rn chat app",
     description: "Chat app built with socket.io,",
     video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749226433/chat-app-vid-preview_ykcv6s.mp4`,
