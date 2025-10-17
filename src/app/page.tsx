@@ -20,13 +20,13 @@ const projects = [
     codeLink: "https://github.com/aekimena/face-verification",
     apkLink: "/apks/callapp.apk",
   },
-  {
-    title: "Flight booking app",
-    description: "Flight booking app (Google flights mobile clone)",
-    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1752271241/price_graph_screen_record_yywsfn.mp4`,
-    codeLink: "https://github.com/aekimena/book-flights-app",
-    apkLink: "/apks/callapp.apk",
-  },
+  // {
+  //   title: "Flight booking app",
+  //   description: "Flight booking app (Google flights mobile clone)",
+  //   video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1752271241/price_graph_screen_record_yywsfn.mp4`,
+  //   codeLink: "https://github.com/aekimena/book-flights-app",
+  //   apkLink: "/apks/callapp.apk",
+  // },
   {
     title: "Rn chat app",
     description: "Chat app built with socket.io,",
@@ -35,13 +35,13 @@ const projects = [
     apkLink: "/apks/callapp.apk",
   },
 
-  {
-    title: "Rn shop app",
-    description: "Marketplace app with flutterwave payment gateway",
-    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749227249/shop-app-vid-prev_zvi4h2.mp4`,
-    codeLink: "https://github.com/aekimena/rn-shop-app",
-    apkLink: "/apks/callapp.apk",
-  },
+  // {
+  //   title: "Rn shop app",
+  //   description: "Marketplace app with flutterwave payment gateway",
+  //   video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749227249/shop-app-vid-prev_zvi4h2.mp4`,
+  //   codeLink: "https://github.com/aekimena/rn-shop-app",
+  //   apkLink: "/apks/callapp.apk",
+  // },
   {
     title: "Rn location tracker app",
     description:
