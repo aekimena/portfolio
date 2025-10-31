@@ -1,6 +1,6 @@
 const links = [
   { title: "Linkedin", url: "https://linkedin.com/in/aekimena" },
-  { title: "X", url: "https://x.com/aekimena" },
+  { title: "X", url: "https://x.com/aeagbogu" },
   { title: "Github", url: "https://github.com/aekimena" },
 ];
 

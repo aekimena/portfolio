@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Image from "next/image";
 import React from "react";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const projects = [
   {
@@ -27,13 +28,13 @@ const projects = [
   //   codeLink: "https://github.com/aekimena/book-flights-app",
   //   apkLink: "/apks/callapp.apk",
   // },
-  {
-    title: "Rn chat app",
-    description: "Chat app built with socket.io,",
-    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749226433/chat-app-vid-preview_ykcv6s.mp4`,
-    codeLink: "https://github.com/aekimena/rn-chat-app",
-    apkLink: "/apks/callapp.apk",
-  },
+  // {
+  //   title: "Rn chat app",
+  //   description: "Chat app built with socket.io,",
+  //   video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749226433/chat-app-vid-preview_ykcv6s.mp4`,
+  //   codeLink: "https://github.com/aekimena/rn-chat-app",
+  //   apkLink: "/apks/callapp.apk",
+  // },
 
   // {
   //   title: "Rn shop app",
@@ -42,14 +43,14 @@ const projects = [
   //   codeLink: "https://github.com/aekimena/rn-shop-app",
   //   apkLink: "/apks/callapp.apk",
   // },
-  {
-    title: "Rn location tracker app",
-    description:
-      "Search any location and direction. Built with google maps sdk",
-    video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749221814/location-vid-preview_bkjx7x.mp4`,
-    codeLink: "https://github.com/aekimena/rn-location-tracker",
-    apkLink: "/apks/callapp.apk",
-  },
+  // {
+  //   title: "Rn location tracker app",
+  //   description:
+  //     "Search any location and direction. Built with google maps sdk",
+  //   video: `https://res.cloudinary.com/${process.env.CLOUDINARY_NAME}/video/upload/v1749221814/location-vid-preview_bkjx7x.mp4`,
+  //   codeLink: "https://github.com/aekimena/rn-location-tracker",
+  //   apkLink: "/apks/callapp.apk",
+  // },
   {
     title: "aekimena-month-year-picker",
     description:
@@ -77,6 +78,16 @@ const projects = [
   // },
 ];
 
+const featuredProjects = [
+  {
+    id: "1",
+    title: "Workman",
+    description:
+      "An app that enables people to quickly find and offer small, local, low-friction jobs that pay cash or wallet credit — no long contracts, no remote work, highly local and trustworthy.",
+    link: "https://github.com/aekimena/workman",
+  },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-black p-8">
@@ -91,10 +102,44 @@ export default function Home() {
           // className="rounded-full shadow-lg object-cover"
         />
         <h1 className="mt-4 text-3xl font-bold">Arinze Emmanuel</h1>
-        <p className="text-gray-200 text-base mt-2">React Native Developer</p>
+        <p className="text-gray-200 text-base mt-2">
+          Mobile App Developer (React Native)
+        </p>
       </section>
       {/* <h1 className="text-4xl font-bold mb-10 text-center">My App Portfolio</h1> */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="">
+        <h2 className="text-2xl font-medium text-white">Featured Projects</h2>
+        <p className="mt-2 font-light text-gray-200">
+          Some of the cool stuff I’ve built recently.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+        {featuredProjects.map((project, index) => (
+          <a
+            key={index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow p-5 flex-row flex items-center gap-14"
+            style={{ backgroundColor: "#121212" }}
+          >
+            <div>
+              <h1 className="text-2xl font-semibold text-white">
+                {project.title}
+              </h1>
+              <p className="font-light text-white mt-2">
+                {project.description}
+              </p>
+            </div>
+            {/* <div>//</div> */}
+            <ArrowRightIcon aria-hidden="true" className="size-15 text-white" />
+          </a>
+        ))}
+      </div>
+      <div className="mt-14">
+        <h2 className="text-3xl font-medium text-white">More Projects</h2>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
         {projects.map((project, index) => (
           <div
             key={index}

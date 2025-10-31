@@ -12,7 +12,7 @@ export default function About() {
 
         <p className="text-lg leading-relaxed mb-6 pt-10">
           Hi, I&apos;m <span className="font-semibold">Arinze Emmanuel</span> —
-          a React Native developer with 5+ years experience building fast,
+          a React Native developer with 3+ years experience building fast,
           intuitive, and scalable mobile apps. I specialize in crafting
           cross-platform experiences that feel native and solve real-world
           problems.
