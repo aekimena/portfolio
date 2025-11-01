@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Image from "next/image";
 import React from "react";
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 const projects = [
   {
