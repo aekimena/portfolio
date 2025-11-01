@@ -166,7 +166,7 @@ export default function Home() {
               </div>
             </div>
             {/* <div>//</div> */}
-            <ArrowRightIcon aria-hidden="true" className="size-15 text-white" />
+            {/* <ArrowRightIcon aria-hidden="true" className="size-15 text-white" /> */}
           </a>
         ))}
       </div>
