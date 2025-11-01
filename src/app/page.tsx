@@ -171,7 +171,7 @@ export default function Home() {
         ))}
       </div>
       <div className="mt-14">
-        <h2 className="text-3xl font-medium text-white">More Projects</h2>
+        <h2 className="text-2xl font-medium text-white">More Projects</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
         {projects.map((project, index) => (
