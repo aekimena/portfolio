@@ -127,9 +127,43 @@ export default function Home() {
               <h1 className="text-2xl font-semibold text-white">
                 {project.title}
               </h1>
-              <p className="font-light text-white mt-2">
+              <p className="font-light text-white mt-3">
                 {project.description}
               </p>
+              <div className="flex flex-row gap-x-3 mt-4">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center
+                  border
+                  border-white
+                  bg-transparent
+                  text-white rounded-full px-4 py-2 text-base hover:bg-white/10
+                  active:bg-white/20
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-white/30"
+                >
+                  View Code
+                </a>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center
+                  border
+                  border-white
+                  bg-transparent
+                  text-white rounded-full px-4 py-2 text-base hover:bg-white/10
+                  active:bg-white/20
+                  focus:outline-none
+                  focus:ring-2
+                  focus:ring-white/30"
+                >
+                  Download APK
+                </a>
+              </div>
             </div>
             {/* <div>//</div> */}
             <ArrowRightIcon aria-hidden="true" className="size-15 text-white" />
@@ -164,7 +198,16 @@ export default function Home() {
                   href={project.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-600 text-white px-4 py-2 rounded font-medium hover:bg-blue-500"
+                  className="inline-flex items-center justify-center
+border
+border-white
+bg-transparent
+text-white rounded-full px-4 py-2 text-base hover:bg-white/10
+active:bg-white/20
+focus:outline-none
+focus:ring-2
+focus:ring-white/30 disabled:opacity-50
+disabled:cursor-not-allowed"
                 >
                   View Code
                 </a>
