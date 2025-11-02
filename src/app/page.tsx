@@ -84,6 +84,17 @@ const featuredProjects = [
     description:
       "An app that enables people to quickly find and offer small, local, low-friction jobs that pay cash or wallet credit — no long contracts, no remote work, highly local and trustworthy.",
     link: "https://github.com/aekimena/workman",
+    codeLink: "https://github.com/aekimena/workman",
+    apkLink: "https://expo.dev/artifacts/eas/i6J8PmRJkNvCZnMMnQUDkc.apk",
+  },
+  {
+    id: "2",
+    title: "Homebuddy",
+    description:
+      "A modern real estate app that makes it easy for users to find and rent houses or apartments anywhere in Nigeria — quickly, conveniently, and from trusted listings",
+    link: "https://github.com/aekimena/homebuddy",
+    codeLink: "https://github.com/aekimena/homebuddy",
+    apkLink: "https://expo.dev/artifacts/eas/tuWm318cj8QR4snL5B3Bq3.apk",
   },
 ];
 
@@ -91,7 +102,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-black p-8">
       <Header />
-      <section className="flex flex-col items-center mb-12 pt-20">
+      <section className="flex flex-col items-center mb-14 pt-20">
         <Image
           src="/images/ae-avatar.jpg" // You can use a remote URL here too
           alt="Profile"
@@ -114,11 +125,8 @@ export default function Home() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
         {featuredProjects.map((project, index) => (
-          <a
+          <div
             key={index}
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
             className="rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow p-5 flex-row flex items-center gap-14"
             style={{ backgroundColor: "#121212" }}
           >
@@ -131,7 +139,7 @@ export default function Home() {
               </p>
               <div className="flex flex-row gap-x-3 mt-4">
                 <a
-                  href={project.link}
+                  href={project.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center
@@ -148,7 +156,7 @@ disabled:cursor-not-allowed"
                   View Code
                 </a>
                 <a
-                  href={project.link}
+                  href={project.apkLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center
@@ -168,7 +176,7 @@ disabled:cursor-not-allowed"
             </div>
             {/* <div>//</div> */}
             {/* <ArrowRightIcon aria-hidden="true" className="size-15 text-white" /> */}
-          </a>
+          </div>
         ))}
       </div>
       <div className="mt-14">
