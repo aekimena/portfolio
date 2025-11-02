@@ -85,7 +85,7 @@ const featuredProjects = [
       "An app that enables people to quickly find and offer small, local, low-friction jobs that pay cash or wallet credit — no long contracts, no remote work, highly local and trustworthy.",
     link: "https://github.com/aekimena/workman",
     codeLink: "https://github.com/aekimena/workman",
-    apkLink: "https://expo.dev/artifacts/eas/i6J8PmRJkNvCZnMMnQUDkc.apk",
+    apkLink: "https://expo.dev/artifacts/eas/reWrVNqLvQDaa1sexvXXJS.apk",
   },
   {
     id: "2",
@@ -94,7 +94,7 @@ const featuredProjects = [
       "A modern real estate app that makes it easy for users to find and rent houses or apartments anywhere in Nigeria — quickly, conveniently, and from trusted listings",
     link: "https://github.com/aekimena/homebuddy",
     codeLink: "https://github.com/aekimena/homebuddy",
-    apkLink: "https://expo.dev/artifacts/eas/tuWm318cj8QR4snL5B3Bq3.apk",
+    apkLink: "https://expo.dev/artifacts/eas/kzQEHAVgWtjdFztzCBVAiT.apk",
   },
 ];
 
@@ -119,9 +119,9 @@ export default function Home() {
       {/* <h1 className="text-4xl font-bold mb-10 text-center">My App Portfolio</h1> */}
       <div className="">
         <h2 className="text-2xl font-medium text-white">Featured Projects</h2>
-        <p className="mt-2 font-light text-gray-200">
+        {/* <p className="mt-2 font-light text-gray-200">
           Some of the cool stuff I’ve built recently.
-        </p>
+        </p> */}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
         {featuredProjects.map((project, index) => (
