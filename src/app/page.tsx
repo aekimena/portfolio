@@ -89,6 +89,16 @@ const featuredProjects = [
     apkLink: "https://github.com/aekimena/nearby-chat",
   },
   {
+    id: "5",
+    title: "Month year picker | Open Source NPM Package",
+    description:
+      "Customizable month/year picker component for React Native. Built with TypeScript for full type safety and excellent developer experience",
+    link: "https://www.npmjs.com/package/aekimena-month-year-picker",
+    codeLink: "https://www.npmjs.com/package/aekimena-month-year-picker",
+    // apkLink: "https://expo.dev/artifacts/eas/reWrVNqLvQDaa1sexvXXJS.apk",
+    // apkLink: "https://github.com/aekimena/nearby-chat",
+  },
+  {
     id: "2",
     title: "Workman",
     description:
@@ -166,11 +176,12 @@ disabled:cursor-not-allowed"
                 >
                   View Code
                 </a>
-                <a
-                  href={project.apkLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center
+                {project?.apkLink && (
+                  <a
+                    href={project.apkLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center
                   border
                   border-white
                   bg-transparent
@@ -180,9 +191,10 @@ disabled:cursor-not-allowed"
                   focus:ring-2
                   focus:ring-white/30 disabled:opacity-50
 disabled:cursor-not-allowed"
-                >
-                  Download APK
-                </a>
+                  >
+                    Download APK
+                  </a>
+                )}
               </div>
             </div>
             {/* <div>//</div> */}
