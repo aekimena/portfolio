@@ -80,6 +80,16 @@ const projects = [
 const featuredProjects = [
   {
     id: "1",
+    title: "NearbyChat",
+    description:
+      "A peer-to-peer chat app that allows users to connect and exchange messages without internet access — using only Wi-Fi and mobile hotspot.",
+    link: "https://github.com/aekimena/workman",
+    codeLink: "https://github.com/aekimena/nearby-chat",
+    // apkLink: "https://expo.dev/artifacts/eas/reWrVNqLvQDaa1sexvXXJS.apk",
+    apkLink: "https://github.com/aekimena/nearby-chat",
+  },
+  {
+    id: "2",
     title: "Workman",
     description:
       "An app that enables people to quickly find and offer small, local, low-friction jobs that pay cash or wallet credit — no long contracts, no remote work, highly local and trustworthy.",
@@ -88,7 +98,7 @@ const featuredProjects = [
     apkLink: "https://expo.dev/artifacts/eas/reWrVNqLvQDaa1sexvXXJS.apk",
   },
   {
-    id: "2",
+    id: "3",
     title: "Homebuddy",
     description:
       "A modern real estate app that makes it easy for users to find and rent houses or apartments anywhere in Nigeria — quickly, conveniently, and from trusted listings",
@@ -106,9 +116,10 @@ export default function Home() {
         <Image
           src="/images/ae-avatar.jpg" // You can use a remote URL here too
           alt="Profile"
-          width={140}
-          height={140}
-          style={{ borderRadius: 140 / 2, height: 140, width: 140 }}
+          width={150}
+          height={150}
+          // className="rounded-full"
+          style={{ borderRadius: 150, height: 150, width: 150 }}
           // className="rounded-full shadow-lg object-cover"
         />
         <h1 className="mt-4 text-3xl font-bold">Arinze Emmanuel</h1>
