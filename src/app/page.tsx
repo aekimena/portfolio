@@ -86,7 +86,7 @@ const featuredProjects = [
     link: "https://github.com/aekimena/workman",
     codeLink: "https://github.com/aekimena/nearby-chat",
     // apkLink: "https://expo.dev/artifacts/eas/reWrVNqLvQDaa1sexvXXJS.apk",
-    apkLink: "https://github.com/aekimena/nearby-chat",
+    apkLink: "https://expo.dev/artifacts/eas/6jTfWJv3AFPfCKPzFiytnr.apk",
   },
   {
     id: "5",
