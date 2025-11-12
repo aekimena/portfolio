@@ -84,7 +84,7 @@ const featuredProjects = [
     description:
       "A peer-to-peer chat app that allows users to connect and exchange messages without internet access — using only Wi-Fi and mobile hotspot.",
     link: "https://github.com/aekimena/workman",
-    // codeLink: "https://github.com/aekimena/nearby-chat",
+    codeLink: "https://github.com/aekimena/nearby-chat",
     // apkLink: "https://expo.dev/artifacts/eas/reWrVNqLvQDaa1sexvXXJS.apk",
     apkLink: "https://expo.dev/artifacts/eas/oejVW2W9RrMBjBBViScUtn.apk",
   },
