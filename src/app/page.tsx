@@ -84,9 +84,9 @@ const featuredProjects = [
     description:
       "A peer-to-peer chat app that allows users to connect and exchange messages without internet access — using only Wi-Fi and mobile hotspot.",
     link: "https://github.com/aekimena/workman",
-    codeLink: "https://github.com/aekimena/nearby-chat",
+    // codeLink: "https://github.com/aekimena/nearby-chat",
     // apkLink: "https://expo.dev/artifacts/eas/reWrVNqLvQDaa1sexvXXJS.apk",
-    apkLink: "https://expo.dev/artifacts/eas/6jTfWJv3AFPfCKPzFiytnr.apk",
+    apkLink: "https://expo.dev/artifacts/eas/oejVW2W9RrMBjBBViScUtn.apk",
   },
   {
     id: "5",
@@ -159,11 +159,12 @@ export default function Home() {
                 {project.description}
               </p>
               <div className="flex flex-row gap-x-3 mt-4">
-                <a
-                  href={project.codeLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center
+                {project?.codeLink && (
+                  <a
+                    href={project.codeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center
                   border
                   border-white
                   bg-transparent
@@ -173,9 +174,10 @@ export default function Home() {
                   focus:ring-2
                   focus:ring-white/30 disabled:opacity-50
 disabled:cursor-not-allowed"
-                >
-                  View Code
-                </a>
+                  >
+                    View Code
+                  </a>
+                )}
                 {project?.apkLink && (
                   <a
                     href={project.apkLink}
