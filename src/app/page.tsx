@@ -108,6 +108,16 @@ const featuredProjects = [
     apkLink: "https://expo.dev/artifacts/eas/reWrVNqLvQDaa1sexvXXJS.apk",
   },
   {
+    id: "2.5",
+    title: "Giggin'",
+    description:
+      "A two-sided app for clients and skilled professionals to connect and get work done quickly, conveniently, and from trusted listings.",
+    link: "https://github.com/aekimena/Giggin",
+    codeLink: "https://github.com/aekimena/Giggin",
+    apkLink: "https://expo.dev/artifacts/eas/6e8Q4WgkRLAyZdSZMWZ7wW.apk",
+  },
+
+  {
     id: "3",
     title: "Homebuddy",
     description:
