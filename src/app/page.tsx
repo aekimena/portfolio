@@ -114,7 +114,7 @@ const featuredProjects = [
       "A two-sided app for clients and skilled professionals to connect and get work done quickly, conveniently, and from trusted listings.",
     link: "https://github.com/aekimena/Giggin",
     codeLink: "https://github.com/aekimena/Giggin",
-    apkLink: "https://expo.dev/artifacts/eas/6e8Q4WgkRLAyZdSZMWZ7wW.apk",
+    apkLink: "https://expo.dev/artifacts/eas/x1zqqUUixtSEC36fAvmoXT.apk",
   },
 
   {
