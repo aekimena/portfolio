@@ -99,6 +99,14 @@ const featuredProjects = [
     // apkLink: "https://github.com/aekimena/nearby-chat",
   },
   {
+    id: "11",
+    title: "Progressly",
+    description:
+      "Productivity app that tracks your day, month, and year progress in real time and sends personalized notifications as you reach each 1% milestone.",
+    codeLink: "https://github.com/aekimena/progressly-app",
+    apkLink: "https://expo.dev/artifacts/eas/rR8XnbhpuAJGikkcE6GjE3.apk",
+  },
+  {
     id: "2",
     title: "Workman",
     description:
