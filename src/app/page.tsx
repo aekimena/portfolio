@@ -151,7 +151,7 @@ export default function Home() {
           // className="rounded-full shadow-lg object-cover"
         />
         <h1 className="mt-4 text-3xl font-bold">Arinze Emmanuel</h1>
-        <p className="text-gray-200 text-base mt-2">
+        <p className="text-gray-200 text-base mt-2 text-center">
           Fullstack Developer (Web, Mobile & Backend Systems)
         </p>
       </section>
