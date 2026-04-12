@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Arinze Emmanuel - React Native Developer",
-  description: "Arinze Emmanuel (aekimena) - React Native Developer",
+  title: "Arinze Emmanuel - Fullstack Developer",
+  description:
+    "Arinze Emmanuel (aeagbogu) - Fullstack Developer (React Native, Next.js, MERN Stack)",
 };
 
 export default function RootLayout({

@@ -152,16 +152,102 @@ export default function Home() {
         />
         <h1 className="mt-4 text-3xl font-bold">Arinze Emmanuel</h1>
         <p className="text-gray-200 text-base mt-2">
-          Mobile App Developer (React Native)
+          Fullstack Developer (Web, Mobile & Backend Systems)
         </p>
       </section>
       {/* <h1 className="text-4xl font-bold mb-10 text-center">My App Portfolio</h1> */}
+      {/*  */}
+
+      <section className="mb-20 pt-10">
+        <div
+          className="rounded-3xl overflow-hidden shadow-2xl p-6 md:p-10 flex flex-col md:flex-row gap-10 items-center"
+          style={{ backgroundColor: "#121212" }}
+        >
+          {/* LEFT: IMAGE */}
+          <div className="w-full md:w-1/2">
+            <Image
+              src="/marketplace_image.png"
+              alt="Project Screenshot"
+              width={800}
+              height={500}
+              className="rounded-2xl object-cover w-full h-full"
+            />
+          </div>
+
+          {/* RIGHT: CONTENT */}
+          <div className="w-full md:w-1/2">
+            <p className="text-sm text-gray-400 uppercase tracking-widest">
+              Highlighted Project
+            </p>
+
+            <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
+              Marketplace (Fullstack)
+            </h2>
+
+            <p className="text-gray-300 mt-4 leading-relaxed">
+              A fully functional marketplace platform built with Next.js,
+              featuring real-time product discovery, advanced search filtering,
+              engagement-based ranking, and location-aware listings.
+            </p>
+
+            {/* HIGHLIGHTS */}
+            <ul className="mt-6 space-y-2 text-gray-200 text-sm">
+              <li>• Advanced product search with ranking algorithm</li>
+              <li>• Location-based filtering (nearby sellers)</li>
+              <li>• Engagement tracking (views, likes, wishlist, reviews)</li>
+              <li>• Secure authentication & seller verification</li>
+              <li>• Cloudinary media handling with optimization</li>
+            </ul>
+
+            {/* TECH STACK */}
+            <div className="flex flex-wrap gap-2 mt-6">
+              {[
+                "Next.js",
+                "Typescript",
+                "Node.js",
+                "MongoDB",
+                "Express",
+                "Cloudinary",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="text-xs border border-white/20 px-3 py-1 rounded-full text-gray-300"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* ACTION BUTTONS */}
+            <div className="flex gap-4 mt-8">
+              <a
+                href="https://arimi.co"
+                target="_blank"
+                className="bg-white text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition"
+              >
+                Visit website
+              </a>
+
+              {/* <a
+                href="#"
+                target="_blank"
+                className="border border-white text-white px-5 py-2 rounded-full text-sm hover:bg-white/10 transition"
+              >
+                View Code
+              </a> */}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*  */}
       <div className="">
         <h2 className="text-2xl font-medium text-white">Featured Projects</h2>
         {/* <p className="mt-2 font-light text-gray-200">
           Some of the cool stuff I’ve built recently.
         </p> */}
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
         {featuredProjects.map((project, index) => (
           <div
