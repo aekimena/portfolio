@@ -86,7 +86,7 @@ const featuredProjects = [
     link: "https://github.com/aekimena/workman",
     codeLink: "https://github.com/aekimena/nearby-chat",
     // apkLink: "https://expo.dev/artifacts/eas/reWrVNqLvQDaa1sexvXXJS.apk",
-    apkLink: "https://expo.dev/artifacts/eas/oejVW2W9RrMBjBBViScUtn.apk",
+    apkLink: "https://expo.dev/artifacts/eas/vwjtfigmttj1b5yvQHfK4s.apk",
   },
   {
     id: "5",
@@ -104,7 +104,7 @@ const featuredProjects = [
     description:
       "Productivity app that tracks your day, month, and year progress in real time and sends personalized notifications as you reach each 10% milestone.",
     codeLink: "https://github.com/aekimena/progressly-app",
-    apkLink: "https://expo.dev/artifacts/eas/cC3vHvqu4AHwkMVKpiqxe.apk",
+    apkLink: "https://expo.dev/artifacts/eas/uEv4Sr1QrBFYNMiJwq9owL.apk",
   },
   {
     id: "2",
@@ -113,7 +113,7 @@ const featuredProjects = [
       "An app that enables people to quickly find and offer small, local, low-friction jobs that pay cash or wallet credit — no long contracts, no remote work, highly local and trustworthy.",
     link: "https://github.com/aekimena/workman",
     codeLink: "https://github.com/aekimena/workman",
-    apkLink: "https://expo.dev/artifacts/eas/reWrVNqLvQDaa1sexvXXJS.apk",
+    apkLink: "https://expo.dev/artifacts/eas/dAcy5BXMYZx3yEfwxuvnUN.apk",
   },
   {
     id: "2.5",
@@ -122,7 +122,7 @@ const featuredProjects = [
       "A two-sided app for clients and skilled professionals to connect and get work done quickly, conveniently, and from trusted listings.",
     link: "https://github.com/aekimena/Giggin",
     codeLink: "https://github.com/aekimena/Giggin",
-    apkLink: "https://expo.dev/artifacts/eas/x1zqqUUixtSEC36fAvmoXT.apk",
+    apkLink: "https://expo.dev/artifacts/eas/5qeXHWFjE9HhTr6mE4pM6N.apk",
   },
 
   {
@@ -132,7 +132,7 @@ const featuredProjects = [
       "A modern real estate app that makes it easy for users to find and rent houses or apartments anywhere in Nigeria — quickly, conveniently, and from trusted listings",
     link: "https://github.com/aekimena/homebuddy",
     codeLink: "https://github.com/aekimena/homebuddy",
-    apkLink: "https://expo.dev/artifacts/eas/kzQEHAVgWtjdFztzCBVAiT.apk",
+    apkLink: "https://expo.dev/artifacts/eas/gPkj6DE1143QVSrrhGrKZt.apk",
   },
 ];
 
